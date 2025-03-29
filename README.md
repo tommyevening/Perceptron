@@ -1,97 +1,103 @@
-🤖 Perceptron
-The Perceptron project is an implementation of a classic machine learning algorithm that forms the foundation of many modern artificial intelligence methods. The goal of this project was to create a working single-layer perceptron capable of solving binary classification tasks.
-This project demonstrates my skills in:
+# 🤖 Perceptron Implementation
 
-Object-oriented programming
-Implementing machine learning algorithms
-Efficiently handling and processing input data
+## 🎯 About the Project
+This project implements a perceptron, a fundamental machine learning algorithm used for classifying linearly separable data. The project demonstrates:
 
-🎯 Project Goal
-The project aimed to:
+- 🧠 Practical implementation of a perceptron
+- 💻 Programming in Java
+- 📊 Visualization of the learning process
+- 🔍 Testing on real-world data
 
-🧠 Implement a single-layer perceptron for binary classification
-📚 Understand and practically apply a machine learning algorithm
-📊 Work with input data and process it to train a model
-🏗️ Demonstrate modular code architecture and good programming practices
+---
 
-🌟 Project Scope
-🔹 Perceptron Implementation
+## 🌟 Main Components
 
-Implementation of the perceptron learning algorithm using an activation function
-Support for binary classification based on linear data separation
+📦 **Perceptron Project**
+```
+ ┣ 📜 Perceptron.java
+ ┣ 📜 Point.java
+ ┗ 📜 Main.java
+```
 
-🔹 Working with Input Data
+### 🔹 **Perceptron.java**
+✅ Implementation of the perceptron algorithm
+✅ Learning and prediction functions
+✅ Management of weights and learning rate
 
-A DataPoint class to represent data points with features and a label
-Easily extendable to handle different types of input data
+### 🔹 **Point.java**
+✅ Representation of data points
+✅ Storage of x, y coordinates
+✅ Determination of point class
 
-🔹 Modular Code Architecture
+### 🔹 **Main.java**
+✅ Demonstration of the perceptron's operation
+✅ Generation of test data
+✅ Visualization of results
 
-Separation of algorithm logic from input data and results
-Clean, readable, and easy-to-maintain code
+---
 
-🔹 Testing and Result Visualization
+## 💡 Key Features
 
-The Main class contains examples of using the perceptron on test data
-Easily extendable with new datasets for further testing
+```mermaid
+graph LR
+    A[Point Data] --> B[Perceptron]
+    B --> C[Learning Process]
+    C --> D[Weight Adjustment]
+    D --> E[Classification]
+    E --> F[Visualization]
+```
 
-🗂️ Project Structure
-📂 DataPoint.java
+### 📊 **Perceptron Algorithm**
+✅ Initialization of random weights
+✅ Implementation of the activation function
+✅ Adaptive learning process
 
-Represents a single data point
-Stores:
+### 🎯 **Data Processing**
+✅ Handling of 2D points
+✅ Binary classification
+✅ Normalization of input data
 
-Features (input vector)
-Class label
+### 📈 **Visualization**
+✅ Displaying points
+✅ Drawing the separating line
+✅ Tracking the learning process
 
+---
 
-Enables easy management of input data
+## 🛠️ Technologies
+| **Technology** | **Application** |
+|--------------- |-----------------|
+| Java ☕       | Programming language |
+| Perceptron 🤖 | Machine learning algorithm |
+| Graphics 📊    | Visualization of results |
 
-📂 Perceptron.java
+---
 
-Implements the perceptron algorithm
-Contains methods for:
+## 📚 Knowledge Gained
 
-Training the model based on input data
-Classifying new data
-Calculating error and updating weights
+### **Machine Learning Concepts**
+- 📌 Understanding how a perceptron works
+- 📌 Implementing the learning process
+- 📌 Optimization of learning parameters
 
+### **Programming Skills**
+- 📌 Object-oriented approach to implementation
+- 📌 Management of input data
+- 📌 Visualization of results
 
+### **Practical Applications**
+- 📌 Data classification
+- 📌 Model testing
+- 📌 Analysis of results
 
-📂 Main.java
+---
 
-The main class that runs the project
-Includes examples of using the perceptron on test data
-Demonstrates the learning process and classification results
+## 🎓 Summary
+The **Perceptron** project is a practical implementation of a basic machine learning algorithm that showcases:
 
-🛠️ Technologies Used
-TechnologyApplication☕ JavaCore programming language🧠 PerceptronMachine learning algorithm🏗️ OOPModular code architecture
-💡 What This Project Demonstrates
-🧠 Understanding of Machine Learning Algorithms
-Demonstrates knowledge of the perceptron—one of the fundamental machine learning algorithms—and its practical application.
-🛠️ Programming Skills
+✨ Understanding of machine learning concepts
+🏗️ Ability to implement ML algorithms
+🔍 Practical application in data classification
+📈 Visualization of the learning process
 
-Modular and readable code design
-Attention to code quality and maintainability
-
-📊 Working with Data
-
-Efficient handling and processing of input data
-
-✨ Attention to Detail
-Each class and method is designed with clarity and functionality in mind, making the project easy to understand and extend.
-🚀 How to Run the Project
-
-Clone the repository to your computer
-Set up a Java environment (JDK 8+)
-Run the Main.java class to see the perceptron in action on test data
-
-🎓 Summary
-The Perceptron project is an example of implementing a classic machine learning algorithm that showcases my skills in:
-
-🧠 Understanding ML algorithms
-🏗️ Object-oriented programming
-📊 Working with input data
-✨ Designing modular applications
-
-This project combines theory with practice and provides a solid foundation for further development in the field of machine learning.
+🚀 The project includes a full implementation with usage examples and visualization! 🔗
