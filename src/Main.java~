@@ -1,0 +1,42 @@
+import javax.xml.crypto.Data;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        List<DataPoint> input = loadDataFromFile("assets/trainData.txt");
+
+        Perceptron perceptron = new Perceptron(4, 0.1);
+        System.out.println(perceptron.compute(input.get(0)));
+        System.out.println(perceptron.compute(input.get(1)));
+        System.out.println(perceptron.compute(input.get(2)));
+        System.out.println(perceptron.compute(input.get(3)));
+
+
+    }
+
+
+    private static List<DataPoint> loadDataFromFile(String filename) {
+        List<DataPoint> dataList = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] elements = line.split(",");
+                double[] features = new double[elements.length - 1];
+                for (int i = 0; i < elements.length - 1; i++) {
+                    features[i] = Double.parseDouble(elements[i]);
+                }
+                String label = elements[elements.length - 1];
+                dataList.add(new DataPoint(features, label));
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Error reading file: " + filename, e);
+        }
+        return dataList;
+    }
+}
