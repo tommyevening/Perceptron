@@ -1,5 +1,3 @@
-package done;
-
 public class DataPoint {
     private final double[] features;
     private final int expectedOutput;
